@@ -74,6 +74,94 @@ section h3 {
   margin-bottom: 8px;
 }
 
+/* New: Participants section inside activity card */
+.participants-section {
+  margin-top: 12px;
+}
+
+.participants-section h5 {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+  border-bottom: 1px dashed #eee;
+  padding-bottom: 6px;
+}
+
+/* Participants list styled like a neat bulleted list with avatars */
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  padding: 8px 0 0 0;
+  margin: 0;
+  max-height: 110px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Delete / remove button next to participants */
+.remove-participant {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.remove-participant:hover {
+  background: rgba(198,40,40,0.08);
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px;
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+
+.participants-list li:hover {
+  background: #f1f7ff;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3949ab, #1a237e);
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  flex: 0 0 36px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+
+.participant-email {
+  font-size: 14px;
+  color: #333;
+  word-break: break-word;
+}
+
+/* Empty state for no participants yet */
+.no-participants {
+  color: #666;
+  font-style: italic;
+  font-size: 14px;
+  padding: 6px 0;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
